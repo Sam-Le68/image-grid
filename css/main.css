@@ -14,26 +14,12 @@ html {
 
 section {
   display: flex;
-  margin: 0;
+  flex-wrap: wrap;
 }
 
 img {
+  width: 100%;
   display: block;
-}
-
-.photo:nth-child(1) {
-  width: 100%;
-  max-width: 25em;
-}
-
-.photo:nth-child(3) {
-  width: 100%;
-  max-width: 25em;
-}
-
-.photo:nth-child(4) {
-  width: 100%;
-  max-width: 25em;
 }
 
 .photo:nth-child(2), .photo:nth-child(5) {
@@ -42,23 +28,23 @@ img {
 
 @media only screen and (min-width: 25em) {
 
-  .photo:nth-child(2), .photo:nth-child(3) {
+  .photo:nth-child(2), .photo:nth-child(3), .photo:nth-child(4), .photo:nth-child(5) {
     width: 50%;
-    max-width: 38em;
-  }
-
-  .photo:nth-child(4), .photo:nth-child(5) {
-    width: 50%;
-    max-width: 38em;
+    display: block;
   }
 
 }
 
 @media only screen and (min-width: 38em) {
 
-  .photo:nth-child(2), .photo:nth-child(3). .photo:nth-child(4) {
+  .photo:nth-child(1) {
+    width: 100%;
+    display: block;
+  }
+
+  .photo:nth-child(2), .photo:nth-child(3), .photo:nth-child(4) {
     width: 33.3333%;
-    max-width: 60em;
+    display: block;
   }
 
   .photo:nth-child(5) {
@@ -71,12 +57,11 @@ img {
 
   .photo:nth-child(1) {
     width: 66.6666%;
-    max-width: 90em;
   }
 
   .photo:nth-child(2), .photo:nth-child(3), .photo:nth-child(4), .photo:nth-child(5) {
     width: 33.3333%;
-    max-width: 90em;
+    display: block;
   }
 
 }

@@ -16,6 +16,10 @@ section {
   display: flex;
 }
 
+img {
+  display: block;
+}
+
 .photo:nth-child(1) {
   width: 100%;
 }
@@ -30,4 +34,28 @@ section {
 
 .photo:nth-child(2), .photo:nth-child(5) {
   display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .photo:nth-child(2), .photo:nth-child(3) {
+    width: 50%;
+  }
+
+  .photo:nth-child(4), .photo:nth-child(5) {
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .photo:nth-child(2), .photo:nth-child(3). .photo:nth-child(4) {
+    width: 33.3333%;
+  }
+
+  .photo:nth-child(5) {
+    display: none;
+  }
+
 }
